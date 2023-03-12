@@ -1,35 +1,35 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.30vw;
     background-color: rgb(234, 224, 224);
 }
 
 p {
-    margin: 0 0 5px;
+    margin: 0 0 0.26vw;
 }
 
 .name {
-    font-size: 45px;
+    font-size: 2.34vw;
     text-align: inherit;
-    border-bottom: 1px solid #0f0f0f36;
-    padding: 12px 0px;
+    border-bottom: 0.05vw solid #0f0f0f36;
+    padding: 0.63vw 0vw;
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 31.25vw;
+    margin: 1.04vw auto;
 }
 
 .faq-item {
-    border-bottom: 2px solid #0f0f0f36;
+    border-bottom: 0.10vw solid #0f0f0f36;
     transition: 2s all;
-    padding: 13px 0;
+    padding: 0.68vw 0;
 }
 
 .faq-title {
     display: block;
     cursor: pointer;
-    padding: 5px 0px;
+    padding: 0.83vw 0vw;
     font-weight: 900;
     display: flex;
     justify-content: space-between;
@@ -46,11 +46,11 @@ p {
 }
 
 .faq-input:checked + .faq-text {
-    height: 30vh;
+    height: 24.5vh;;
 }
 
-.faq-title:hover ~ .faq-text {
-    height: 260px;
+.faq-item:hover .faq-text {
+    height: 13.54vw;
     transition: 1.2s all;
 
 }
@@ -61,22 +61,33 @@ p {
 
 .faq-text {
     height: 0;
-    padding: 0px 15px;
+    padding: 0vw 0.78vw;
     overflow: hidden;
 }
 
 .pics {
-    padding: 0 0 0 107px;
+    padding: 0 0 0 5.57vw;
 }
 
 .faq-text img {
-    width: 350px;
-    height: 260px;
+    width: 18.23vw;
+    height: 13.54vw;
 }
 
 .faq-title:hover ~ .faq-item {
     transition: 1.2s all;
 }
+
+span {
+    transition: 0.6s;
+}
+
+.faq-title:hover span {
+    transform: rotate(120deg);
+}
+
+
+
 
 
 
