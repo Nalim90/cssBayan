@@ -10,8 +10,16 @@ p {
 
 .name {
     font-size: 45px;
-    text-align: center;
-    border-bottom: 1px solid #b232;
+    text-align: inherit;
+    border-bottom: 1px solid #0f0f0f36;
+    padding: 12px 0px;
+}
+
+.pics {
+    width: 350px;
+    height: 330px;
+    padding: 0 0 0 107px;
+    transition: 0.3s;
 }
 
 .faq {
@@ -20,17 +28,20 @@ p {
 }
 
 .faq-item {
-    border-bottom: 1px solid #b91125;
+    border-bottom: 1px solid #0f0f0f36;
 }
 
 .faq-title {
     display: block;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 5px 0px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
 }
 
 .faq-title:hover {
-    background-color:#b91125;
+    background-color:#ede7e800;
     transition: 0.6s ease-out;
 }
 
@@ -43,7 +54,16 @@ p {
     display: block;
 }
 
+.faq-title:hover ~ .faq-text {
+    display: block;
+
+}
+
 .faq-text {
     display: none;
     padding: 10px 15px;
+}
+
+.faq-text:hover {
+    display: block;
 }
