@@ -1,0 +1,49 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: rgb(234, 224, 224);
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+.name {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid #b232;
+}
+
+.faq {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #b91125;
+}
+
+.faq-title {
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.faq-title:hover {
+    background-color:#b91125;
+    transition: 0.6s ease-out;
+}
+
+.faq-input {
+    appearance: none;
+    display: none;
+}
+
+.faq-input:checked + .faq-text {
+    display: block;
+}
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+}
