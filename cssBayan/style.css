@@ -45,13 +45,12 @@ p {
     display: none;
 }
 
-.faq-input:checked + .faq-text {
-    display: block;
+.faq-input:checked + .faq-text, .faq-item:has(.faq-input:ckecked):hover .faq-text {
+    height: 30vh;
 }
 
 .faq-title:hover ~ .faq-text {
-    height: 100%;
-    opacity: 1;
+    height: 260px;
     transition: 1.2s all;
 
 }
@@ -64,7 +63,6 @@ p {
     height: 0;
     padding: 0px 15px;
     overflow: hidden;
-    opacity: 0;
 }
 
 .pics {
@@ -73,12 +71,13 @@ p {
 
 .faq-text img {
     width: 350px;
-    height: 300px;
+    height: 260px;
 }
 
 .faq-title:hover ~ .faq-item {
     transition: 1.2s all;
 }
+
 
 
 
