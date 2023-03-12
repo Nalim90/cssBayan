@@ -15,20 +15,15 @@ p {
     padding: 12px 0px;
 }
 
-.pics {
-    width: 350px;
-    height: 330px;
-    padding: 0 0 0 107px;
-    transition: 0.3s;
-}
-
-.faq {
+.container {
     max-width: 600px;
     margin: 20px auto;
 }
 
 .faq-item {
-    border-bottom: 1px solid #0f0f0f36;
+    border-bottom: 2px solid #0f0f0f36;
+    transition: 2s all;
+    padding: 13px 0;
 }
 
 .faq-title {
@@ -55,15 +50,49 @@ p {
 }
 
 .faq-title:hover ~ .faq-text {
-    display: block;
+    height: 100%;
+    opacity: 1;
+    transition: 1.2s all;
 
-}
-
-.faq-text {
-    display: none;
-    padding: 10px 15px;
 }
 
 .faq-text:hover {
     display: block;
 }
+
+.faq-text {
+    height: 0;
+    padding: 0px 15px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.pics {
+    padding: 0 0 0 107px;
+}
+
+.faq-text img {
+    width: 350px;
+    height: 300px;
+}
+
+.faq-title:hover ~ .faq-item {
+    transition: 1.2s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
