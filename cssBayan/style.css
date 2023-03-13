@@ -80,6 +80,7 @@ a:active .pics {
     background-color: rgba(147, 138, 138, 0.273);
   }
 
+
 @media (max-width: 1920px) {
 
     .faq-input:checked + .faq-text {
@@ -160,6 +161,7 @@ a:active .pics {
 
     .faq-title:hover .close, .faq-item:has(input:checked) .close {
         transform: rotate(45deg);
+        color:red;
     }
 
     .container:hover .close {
