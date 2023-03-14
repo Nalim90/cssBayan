@@ -1,0 +1,220 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.30vw;
+    background-color: rgb(234, 224, 224);
+}
+
+p {
+    margin: 0 0 0.26vw;
+}
+
+.name {
+    font-size: 3.34vw;
+    text-align: inherit;
+    border-bottom: 0.05vw solid #0f0f0f36;
+    padding: 0.63vw 0vw;
+}
+
+.container {
+    max-width: 80.25vw;
+    margin: 1.04vw auto;
+}
+
+.faq-item {
+    border-bottom: 0.10vw solid #0f0f0f36;
+    transition: 2s all;
+    padding: 0.68vw 0;
+}
+
+.faq-title {
+    display: block;
+    cursor: pointer;
+    padding: 0.83vw 0vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-input {
+    appearance: none;
+    display: none;
+}
+
+
+
+.faq-input:checked {
+    color: black;
+}
+
+.faq-text {
+    height: 0;
+    padding: 0vw 0.78vw;
+    overflow: hidden;
+}
+
+.pics {
+    padding: 0 0 0 5.57vw;
+}
+
+.faq-text img {
+    width: 38.23vw;
+    height: 30.54vw;
+}
+
+.close {
+    transition: 0.4s;
+    display: none;
+    font-size: 2vw;
+}
+
+a:active .pics {
+    opacity: 0.8;
+}
+
+.text {
+    color: rgb(64, 46, 251);
+    font-size: 2vw;
+}
+
+.faq-input:checked + .faq-text {
+    background-color: rgba(209, 212, 243, 0.531);
+  }
+
+  .faq-item:has(input:checked) .text {
+    color:red;
+  }
+
+
+@media (max-width: 1920px) {
+
+    .faq-input:checked + .faq-text {
+        height: 62.7vh;
+        padding: 2.04vw 0vw 0vw 15vw;
+    }
+
+    .faq-text {
+        padding: 1.04vw 0vw 0vw 15vw;
+    }
+}
+
+@media (max-width: 1000px) {
+
+
+    .text {
+        font-size: 2.8vw;
+    }
+
+    .close {
+        font-size: 2.8vw;
+    }
+
+    .name {
+        font-size: 3.5vw;
+    }
+
+    .faq-item {
+        padding: 1.68vw 0;
+    }
+
+
+    .faq-input:checked + .faq-text {
+        height: 28.7vh;
+        padding: 1.04vw 0vw 0vw 9.5vw;
+    }
+
+    .faq-text img {
+        width: 50.23vw;
+        height: 40.54vw;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .faq-item:has(input:checked) .close {
+        transform: rotate(45deg);
+        color:red;
+    }
+
+
+}
+
+@media (max-width: 500px){
+    .name {
+        font-size: 6.5vw;
+    }
+
+    .text {
+        font-size: 3.8vw;
+    }
+
+    .close {
+        font-size: 3.8vw;
+        display: block;
+    }
+
+    .faq-text img {
+        width: 60.23vw;
+        height: 50.54vw;
+    }
+
+    .faq-item {
+        padding: 5.68vw 0;
+    }
+
+    .faq-input:checked + .faq-text {
+        height: 29.7vh;
+        padding: 1.04vw 0vw 0vw 4vw;
+    }
+
+    .faq-item:has(input:checked) .close {
+        transform: rotate(45deg);
+        color:red;
+    }
+}
+
+@media (hover: hover) {
+
+    .faq-item:hover .faq-text {
+        height: 30.55vw;
+        transition: 1.2s all;
+    }
+
+    .faq-title:hover .close, .faq-item:has(input:checked) .close {
+        transform: rotate(45deg);
+        color:red;
+    }
+
+    .container:hover .close {
+        display: block;
+    }
+
+    .container:hover .text {
+        color: black;
+    }
+
+    .faq-title:hover .text, .faq-item:has(input:checked) .text {
+        color:red;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
