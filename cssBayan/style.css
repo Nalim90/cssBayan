@@ -193,6 +193,10 @@ a:active .pics {
         color: black;
     }
 
+    .faq-title:hover .text, .faq-item:has(input:checked) .text {
+        color:red;
+    }
+
 }
 
 
