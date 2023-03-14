@@ -77,7 +77,11 @@ a:active .pics {
 }
 
 .faq-input:checked + .faq-text {
-    background-color: rgba(147, 138, 138, 0.273);
+    background-color: rgba(209, 212, 243, 0.531);
+  }
+
+  .faq-item:has(input:checked) .text {
+    color:red;
   }
 
 
@@ -122,6 +126,17 @@ a:active .pics {
         width: 50.23vw;
         height: 40.54vw;
     }
+
+    .close {
+        display: block;
+    }
+
+    .faq-item:has(input:checked) .close {
+        transform: rotate(45deg);
+        color:red;
+    }
+
+
 }
 
 @media (max-width: 500px){
@@ -135,6 +150,7 @@ a:active .pics {
 
     .close {
         font-size: 3.8vw;
+        display: block;
     }
 
     .faq-text img {
@@ -149,6 +165,11 @@ a:active .pics {
     .faq-input:checked + .faq-text {
         height: 29.7vh;
         padding: 1.04vw 0vw 0vw 4vw;
+    }
+
+    .faq-item:has(input:checked) .close {
+        transform: rotate(45deg);
+        color:red;
     }
 }
 
